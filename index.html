@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="web developer resume">
+  <title>Sally Student</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+  <div id="application-root"></div>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js">
+  </script>
+
+  <script src="https://unpkg.com/react@16/umd/react.development.js">
+  </script>
+
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+  </script>
+
+  <script type="text/babel">
+
+    // App component
+  function App(props) {
+    return (
+    <div className="container">
+    <header>
+      <h1>{props.name}, {props.profession}
+      </h1>
+      <img src="https://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg" alt="Sally Student"/>
+    </header>
+    <main>
+      <section className="objective">
+      <h2 className="underline">Career Objective</h2>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sodales sapien eu dui fermentum, maximus rhoncus eros facilisis. Aenean a placerat nulla. Duis eget posuere massa. Morbi porta mollis orci, in suscipit odio condimentum a. Nulla et tincidunt nisl. Etiam quis facilisis nisl, ut tincidunt turpis.
+           </p>
+           </section>
+           <section className="education">
+             <h2 className="underline">Education</h2>
+             <ul>
+               <li> Bachelor of Fine Arts - University of Life</li>
+               <li> Master of Business Administration - University of Life</li>
+             </ul>
+             </section>
+             <section className="workhistory">
+           <h2 className="underline">Employment History</h2>
+             <h3> Sr. Full Stack Developer, 03/2012 -- present</h3>
+            <h3 className="company">Web Marketing, LLC</h3>
+              <ul>
+                  <li>Suspendisse ultrices ligula in sagittis aliquet.</li>
+                  <li>Aliquam lobortis sem a nunc sagittis, nec pulvinar urna sodales.</li>
+                  <li>Nam sagittis orci vitae ipsum sodales, quis consequat nunc rhoncus.</li>
+              </ul>
+            <h3>Full Stack Developer, 01/2009 -- 03/2012</h3>
+            <h3 className="company">Computers R US, Inc.</h3>
+               <ul>
+                  <li>Ut eget tellus at lorem tempor porta.</li>
+                  <li>Maecenas sit amet lacus lacinia, auctor dui ut, dictum diam.</li>
+                  <li>Aenean pretium nisl sed iaculis ornare.</li>
+               </ul>
+            <h3>Web Development Intern, 06/2008 -- 12/2009</h3>
+            <h3 className="company">We Love Websites, Corp.</h3>
+               <ul>
+                  <li>Proin tristique sapien id est dictum malesuada.</li>
+                  <li>Quisque non nisi euismod, luctus tortor eget, condimentum ligula.</li>
+              </ul>
+           </section>
+           <section className="contactinfo">
+             <h2 className="underline">Contact Information</h2>
+                    <address>
+                        <ul>
+                          <li>Email: <a href="mailto:sally@somewhere.com">sally@somewhere.com</a></li>
+                          <li>Phone: 777-777-7777</li>
+                        </ul>
+                    </address>
+           </section>
+      </main>
+    </div>
+      );
+  }
+  // Nested elements inside the App
+  ReactDOM.render(
+    <App name="Sally Student" profession="Web Developer"></App>,
+    document.querySelector('#application-root')
+  );
+
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+body {
+  padding-right: 20px;
+  padding-left: 20px;
+  font-family: helvetica, arial, sans-serif;
+}
+
+h1 {
+  font-size: 22px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+p, li {
+  font-size: 14px;
+}
+
+address {
+  font-style: normal;
+}
+
+.underline {
+  border-bottom: 1px solid cornflowerblue;
+  padding-bottom: 10px;
+}
+
+.company {
+  font-weight: normal;
+}
+
+img {
+  border: solid darkslategray;
+  height: 175px;
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  body{
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  p, li {
+    font-size: 16px;
+  }
+
+  img {
+    border: solid darkslategray;
+    height: 250px;
+}
